@@ -11,7 +11,7 @@ The "Level 1 Wavlet Compression Demo" and "Level 1 Wavlet Compression Functions.
 
 -----------------------------------------------
 
-The DWTCompression.py file contains the actual functions required to compress and uncompress images with Wavlet Compression
+The [DWTCompression](DWTCompression.py) file contains the actual functions required to compress and uncompress images with Wavlet Compression
 
 Heres an overview of usage for the 4 functions in that file:
 
