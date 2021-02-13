@@ -19,5 +19,10 @@ Heres an overview of function usage for the 4 functions
 
 ```python
 im = imread('rocket.jpg') # Opens sample Image
-compressed_wavlets = compress_image(im, level = 1, compression_threshold = 0.60) # Compresses Image into Wavlets and keeping only the top 60% of the wavlet coefficients
+
+level = 1  # Setting Wavlets level to 1 (Level can be between 1 and 1000; The higher the level the less the compression loss)
+# Compresses Image into Wavlets and keeping only the top 60% of the wavlet coefficients
+compressed_wavlets = compress_image(im, level = 1, compression_threshold = 0.60) 
+
+uncompressed_image = uncompress_image(compressed_wavlets, 1000, np.shape(im)[:2] )
 ```
