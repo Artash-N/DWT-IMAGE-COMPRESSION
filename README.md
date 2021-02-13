@@ -18,5 +18,6 @@ Heres an overview of function usage for the 4 functions
 1. ```compress_image(image, level, compression_threshold)```
 
 ```python
-im = imread('rocket.jpg')
+im = imread('rocket.jpg') # Opens sample Image
+compressed_wavlets = compress_image(im, level = 1, compression_threshold = 0.60) # Compresses Image into Wavlets and keeping only the top 60% of the wavlet coefficients
 ```
