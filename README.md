@@ -13,7 +13,7 @@ The "Level 1 Wavlet Compression Demo" and "Level 1 Wavlet Compression Functions.
 
 The DWTCompression.py file contains the actual functions required to compress and uncompress images with Wavlet Compression
 
-Heres an overview of function usage for the 4 functions
+Heres an overview of usage for the 4 functions in that file:
 
 1. ```compress_image(image, level, compression_threshold)```
 
@@ -25,7 +25,12 @@ level = 1
 
 
 # Compresses Image into Wavlets and keeping only the top 60% of the wavlet coefficients
-compressed_wavlets = compress_image(im, level = 1, compression_threshold = 0.60) 
+compressed_wavlets = compress_image(im, level = level, compression_threshold = 0.60) 
 
-uncompressed_image = uncompress_image(compressed_wavlets, 1000, np.shape(im)[:2] )
+
+# Reconstruct Original Image from Wavlets (with some amount of loss)
+# You'll need to provide, in addition to the wavlets, the level used in the compression and the shape of the original image
+uncompressed_image = uncompress_image(compressed_wavlets, level, np.shape(im)[:2])
+
+
 ```
