@@ -11,6 +11,6 @@ The "Level 1 Wavlet Compression Demo" and "Level 1 Wavlet Compression Functions.
 
 -----------------------------------------------
 
-'''
+```python
 d
 '''
