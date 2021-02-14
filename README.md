@@ -73,12 +73,13 @@ wavlet_level_graph(im, level_min = 1, level_max = 1000, compression_threshold = 
 #
 
 
-4. ```wavlet_level_graph(im, level_min, level_max, compression_threshold, resolution=20)```
+4. ```wavlet_threshold_graph(im, level, min_threshold=1e-3, max_threshold=1, resolution = 20)```
 
 ```python
-wavlet_threshold_graph(im, level, min_threshold=1e-3, max_threshold=1, resolution = 20)
+wavlet_threshold_graph(im, 500)
 
 # The Command should return:
 # What is essentially shows is that the loss increases as you decrease the threshold
 # And that there is a point afterwhich the compression becomes near lossless
 ```
+![Image2](image_examples/wavletthresholdgraph.png)
