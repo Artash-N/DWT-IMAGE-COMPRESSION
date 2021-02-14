@@ -30,7 +30,7 @@ compressed_wavlets = compress_image(im, level = level, compression_threshold = 0
 ```
 
 
-
+#
 
 2. ```uncompress_image(compressed_image, level, im_shape)```
 
