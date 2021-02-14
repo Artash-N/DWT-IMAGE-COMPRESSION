@@ -15,6 +15,12 @@ The [DWTCompression](DWTCompression.py) file contains the actual functions requi
 
 Heres an overview of usage for the 4 functions in that file:
 
+# 
+
+<u>The First 2 functions are for applying the wavlet compression and uncompression to images/u>
+
+##
+
 1. ```compress_image(image, level, compression_threshold)```
 
 ```python
