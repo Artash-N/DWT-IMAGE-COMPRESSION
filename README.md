@@ -30,7 +30,10 @@ compressed_wavlets = compress_image(im, level = level, compression_threshold = 0
 
 # Reconstruct Original Image from Wavlets (with some amount of loss)
 # You'll need to provide, in addition to the wavlets, the level used in the compression and the shape of the original image
-uncompressed_image = uncompress_image(compressed_wavlets, level, np.shape(im)[:2])
+reconstructed_image = uncompress_image(compressed_wavlets, level, np.shape(im)[:2])
 
 
+# This returns the loss between the origina image, and the image reconstructed after wavlet compression
+# The Loss is expressed as the Mean Pixel Difference between the 2 images; or Mean(Abs(Original-Reconstructed))
+compression_loss = calculate_image_simmilarity(im, reconstructed_image)
 ```
