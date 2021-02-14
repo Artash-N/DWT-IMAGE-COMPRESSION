@@ -65,5 +65,6 @@ compression_loss = calculate_image_simmilarity(im, reconstructed_image)
 wavlet_level_graph(im, level_min = 1, level_max = 1000, compression_threshold = 0.1, resolution=50)
 
 # The Command should return:
+# What is essentially shows is that the loss decreases significantly as you increase the wavlet level
 ```
 ![Image1](image_examples/wavletlevelgraph1.png)
