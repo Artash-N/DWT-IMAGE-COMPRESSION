@@ -46,5 +46,11 @@ compression_loss = calculate_image_simmilarity(im, reconstructed_image)
 ```
 
 
+# 
+<u>The Following 2 Functions are for visualizing the compress loss versus the wavlet level and threshold</u>
+
+
+
+
 
 
