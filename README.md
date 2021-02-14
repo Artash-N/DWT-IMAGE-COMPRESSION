@@ -17,7 +17,7 @@ Heres an overview of usage for the 4 functions in that file:
 
 # 
 
-<u>The First 2 functions are for applying the wavlet compression and uncompression to images/u>
+<u>The First 2 functions are for applying the wavlet compression and uncompression to images</u>
 
 ##
 
@@ -62,5 +62,10 @@ compression_loss = calculate_image_simmilarity(im, reconstructed_image)
 3. ```wavlet_level_graph(im, level_min, level_max, compression_threshold, resolution=20)```
 
 ```python
-wavlet_level_graph(im, 1, 1000, 0.1)
+wavlet_level_graph(im, level_min = 1, level_max = 1000, compression_threshold = 0.1, resolution=50)
+
+# The Command should return:
+
+[Image1](image_examples/wavletlevelgraph1.png)
+
 ```
