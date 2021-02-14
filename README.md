@@ -27,7 +27,11 @@ level = 1
 # Compresses Image into Wavlets and keeping only the top 60% of the wavlet coefficients
 compressed_wavlets = compress_image(im, level = level, compression_threshold = 0.60) 
 
+```
 
+2. ```uncompress_image(compressed_image, level, im_shape)```
+
+```python
 # Reconstruct Original Image from Wavlets (with some amount of loss)
 # You'll need to provide, in addition to the wavlets, the level used in the compression and the shape of the original image
 reconstructed_image = uncompress_image(compressed_wavlets, level, np.shape(im)[:2])
@@ -37,3 +41,8 @@ reconstructed_image = uncompress_image(compressed_wavlets, level, np.shape(im)[:
 # The Loss is expressed as the Mean Pixel Difference between the 2 images; or Mean(Abs(Original-Reconstructed))
 compression_loss = calculate_image_simmilarity(im, reconstructed_image)
 ```
+
+
+
+
+2. ```compress_image(image, level, compression_threshold)``
