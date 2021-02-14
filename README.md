@@ -68,3 +68,9 @@ wavlet_level_graph(im, level_min = 1, level_max = 1000, compression_threshold = 
 # What is essentially shows is that the loss decreases significantly as you increase the wavlet level
 ```
 ![Image1](image_examples/wavletlevelgraph1.png)
+
+
+#
+
+
+4. ```wavlet_level_graph(im, level_min, level_max, compression_threshold, resolution=20)```
