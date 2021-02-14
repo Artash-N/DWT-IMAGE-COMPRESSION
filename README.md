@@ -66,4 +66,4 @@ wavlet_level_graph(im, level_min = 1, level_max = 1000, compression_threshold = 
 
 # The Command should return:
 ```
-[Image1](image_examples/wavletlevelgraph1.png)
+![Image1](image_examples/wavletlevelgraph1.png)
