@@ -61,5 +61,6 @@ compression_loss = calculate_image_simmilarity(im, reconstructed_image)
 
 3. ```wavlet_level_graph(im, level_min, level_max, compression_threshold, resolution=20)```
 
-
-
+```python
+wavlet_level_graph(im, 1, 1000, 0.1)
+```
