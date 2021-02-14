@@ -29,6 +29,9 @@ compressed_wavlets = compress_image(im, level = level, compression_threshold = 0
 
 ```
 
+
+
+
 2. ```uncompress_image(compressed_image, level, im_shape)```
 
 ```python
@@ -45,4 +48,3 @@ compression_loss = calculate_image_simmilarity(im, reconstructed_image)
 
 
 
-2. ```compress_image(image, level, compression_threshold)``
